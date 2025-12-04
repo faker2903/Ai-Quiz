@@ -2,8 +2,6 @@
 
 A stunning, AI-powered quiz application featuring a modern **liquid-glass (glassmorphism)** aesthetic. Built with React, TypeScript, TailwindCSS, and Google Gemini AI to generate custom questions on any topic you can imagine.
 
-![Home Screen](C:/Users/ace29/.gemini/antigravity/brain/a42e8976-a67b-4580-8ced-22b6764f906c/home_screen_capture_1764859490839.png)
-
 ## ✨ Features
 
 - 🤖 **AI-Powered Question Generation** - Google Gemini creates 5 unique MCQs on any topic
@@ -14,11 +12,7 @@ A stunning, AI-powered quiz application featuring a modern **liquid-glass (glass
 - 📱 **Fully Responsive** - Beautiful on desktop, tablet, and mobile devices
 - 🌓 **Dark/Light Mode** - Toggle themes for comfortable viewing (currently optimized for dark mode)
 
-## 🎬 Demo
-
-![Quiz Screen](C:/Users/ace29/.gemini/antigravity/brain/a42e8976-a67b-4580-8ced-22b6764f906c/quiz_screen_capture_1764859528692.png)
-
-![Result Screen](C:/Users/ace29/.gemini/antigravity/brain/a42e8976-a67b-4580-8ced-22b6764f906c/result_screen_capture_1764859826247.png)
+## 🎬 Demo https://ai-quiz-nine-khaki.vercel.app/
 
 ## 🚀 Quick Start
 
