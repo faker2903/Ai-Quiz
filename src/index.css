@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+
+  /* Glassmorphism Base */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .glass-dark {
+    background: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Chrome Metallic Gradient */
+  .chrome {
+    background: linear-gradient(145deg, #ffffff, #d3d3d3);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .chrome-dark {
+    background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Neumorphic Shadow - Light */
+  .neu-shadow {
+    box-shadow:
+      8px 8px 16px rgba(0, 0, 0, 0.12),
+      -8px -8px 16px rgba(255, 255, 255, 0.9);
+  }
+
+  /* Neumorphic Shadow - Dark */
+  .neu-shadow-dark {
+    box-shadow:
+      8px 8px 16px rgba(0, 0, 0, 0.4),
+      -8px -8px 16px rgba(80, 80, 80, 0.1);
+  }
+
+  /* Inset Shadow for pressed effect */
+  .neu-inset {
+    box-shadow:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .neu-inset-dark {
+    box-shadow:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.6),
+      inset -4px -4px 10px rgba(80, 80, 80, 0.2);
+  }
+
+  /* Glossy Icon with radial gradient */
+  .glossy-icon {
+    background: radial-gradient(circle at top left, #ffffff, #999999);
+    box-shadow:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 10px rgba(255, 255, 255, 0.8),
+      0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .glossy-icon-dark {
+    background: radial-gradient(circle at top left, #666666, #2a2a2a);
+    box-shadow:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.6),
+      inset -4px -4px 10px rgba(80, 80, 80, 0.2),
+      0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Chrome Button - Glossy 3D Neumorphic (Light Mode) */
+  .chrome-btn {
+    background: linear-gradient(180deg, #e8e8e8 0%, #c8c8c8 50%, #b8b8b8 100%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .chrome-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .chrome-btn:hover {
+    background: linear-gradient(180deg, #f0f0f0 0%, #d0d0d0 50%, #c0c0c0 100%);
+    transform: translateY(-2px);
+    box-shadow:
+      0 10px 20px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .chrome-btn:active {
+    transform: translateY(1px);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.15),
+      inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Chrome Button Dark - Glossy 3D Neumorphic (Dark Mode) */
+  .chrome-btn-dark {
+    background: linear-gradient(180deg, #787878 0%, #585858 50%, #484848 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+      0 8px 16px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .chrome-btn-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .chrome-btn-dark:hover {
+    background: linear-gradient(180deg, #888888 0%, #686868 50%, #585858 100%);
+    transform: translateY(-2px);
+    box-shadow:
+      0 10px 20px rgba(0, 0, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.25),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .chrome-btn-dark:active {
+    transform: translateY(1px);
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.3),
+      inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Pill Shape */
+  .pill {
+    border-radius: 50px;
+  }
+
+  /* Frosted card */
+  .frosted-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .frosted-card-dark {
+    background: rgba(40, 40, 40, 0.4);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
