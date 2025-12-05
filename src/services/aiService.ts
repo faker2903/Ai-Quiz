@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // Temporary: Hardcoded API key for testing
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY ;
 
-console.log("DEBUG: API_KEY loaded:", API_KEY ? "YES" : "NO");
+//console.log("DEBUG: API_KEY loaded:", API_KEY ? "YES" : "NO");
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
